@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            font-family: 方正兰亭刊黑;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        header {
+            width: 100%;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .header-nav {
+
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+
+        }
+
+        .header-nav li {
+            text-align: center;
+
+            display: inline-block;
+            font-family: "方正兰亭刊黑";
+            font-size: 11.5px;
+            margin: 15px;
+
+        }
+
+        .content {
+            position: relative;
+            height: auto;
+            width: 100%;
+        }
+
+        #company-show {
+            height: 480px;
+            width: 100%;
+            background-color: #1b6d85;
+        }
+
+        #service {
+            height: 440px;
+            width: 100%;
+
+        }
+
+        #service .service-introduction {
+            width: 100%;
+
+        }
+
+        #service .service-introduction li {
+            width: 200px;
+            display: inline-block;
+            padding: 20px;
+
+        }
+
+        #service .service-introduction li span {
+            width: 150px;
+            word-break: break-all;
+            word-wrap: break-word;
+
+        }
+
+        .service-title {
+            font-weight: bold;
+            font-family: "方正兰亭刊黑";
+            font-size: 5mm;
+
+        }
+
+        .service-detail {
+
+            font-family: "方正兰亭刊黑";
+            font-size: 3.5mm;
+        }
+
+        #cases {
+            color: white;
+            position: relative;
+            height: 1120px;
+            background-color: #f5883b;
+        }
+
+        #cases-show {
+            margin: 0 auto;
+        }
+
+        .img-show {
+            width: 350px;
+            height: 252px;
+            margin-top: 10px;
+
+        }
+
+        .img-show img {
+            width: 350px;
+            height: 252px;
+        }
+
+        .margin-left {
+            margin-left: 10px;
+        }
+
+        #web-maker {
+            height: 670px;
+            width: 100%;
+            position: relative;
+        }
+
+        #web-maker ul li {
+            display: inline-block;
+        }
+
+        #web-maker ul li .img-container {
+            width: 50%;
+
+            height: 670px;
+            position: relative;
+        }
+
+        .img-container .img1 {
+            position: absolute;
+            right: 240px;
+            top: 240px;
+        }
+
+        .img-container .img2 {
+            position: absolute;
+            right: 120px;
+            top: 140px;
+        }
+
+        .img-container .img3 {
+            position: absolute;
+            right: 20px;
+            top: 40px;
+        }
+
+        .left {
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            left: 0;
+        }
+
+        .right {
+            width: 50%;
+            height: 670px;
+            position: absolute;
+            right: 0;
+        }
+
+        .web-maker-text-content {
+
+            padding-left: 100px;
+            padding-top: 100px;
+            padding-right: 20px;
+        }
+
+        #become {
+            position: relative;
+            height: 665px;
+            background: url("images/become/2.png") no-repeat center;
+
+        }
+
+        #become .bg1 {
+            width: 100%;
+            height: 665px;
+            background: url("images/become/3.png") no-repeat center;
+
+            background-size: 100%;
+        }
+
+        .bg1 .bg2 {
+            width: 100%;
+            height: 665px;
+            background: url("images/become/1.png") no-repeat center;
+            background-size: cover;
+
+        }
+
+        .youhua {
+            margin-top: 100px;
+        }
+
+        .youhua ul li {
+            display: inline-block;
+            background-color: white;
+            width: 300px;
+            height: 300px;
+        }
+
+        .youhua ul li img {
+            margin-top: 60px;
+            width: 180px;
+            height: 120px;
+
+        }
+
+        .youhua ul li:nth-child(2), .youhua ul li:nth-child(3), .youhua ul li:nth-child(4) {
+            margin-left: 15px;
+        }
+
+        .youhua ul li span {
+            word-wrap: break-word;
+            word-break: break-all
+        }
+
+        .youhua ul li span:first-of-type {
+
+            font-weight: bold;
+            font-family: 方正兰亭刊黑;
+            font-size: 5.6mm;
+            position: relative;
+
+        }
+
+        .youhua ul li span:last-of-type {
+
+            font-family: 方正兰亭刊黑;
+            font-size: 4.4mm;
+            margin-bottom: 10px;
+
+        }
+
+        #operate-service {
+            padding-top: 70px;
+            background: url("images/operate/形状-15.png") no-repeat bottom;
+            width: 100%;
+            height: 780px;
+
+        }
+
+        .operate-content {
+            width: 100%;
+        }
+
+        .horizontal-show {
+            display: inline-block;
+        }
+
+        li {
+
+            list-style: none;
+        }
+
+        #links {
+            height: 500px;
+            width: 100%;
+            background: url("images/links/矩形-7-副本-2.png") no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            text-align: center;
+            padding-top: 35px;
+
+        }
+
+        footer {
+            color: #9d9d9d;
+            height: 280px;
+            width: 100%;
+            background: url("images/footer/矩形-20.png");
+            background-size: cover;
+        }
+
+        footer #our-company {
+            padding-top: 40px;
+            height: 185px;
+            width: 100%;
+            text-align: center;
+
+            font-weight: bold;
+        }
+
+        footer #our-company ul {
+
+            display: inline-block;
+            margin-left: 100px;
+        }
+
+        footer #our-company ul li:first-child {
+            margin-bottom: 10px;
+            margin-top: 0;
+            font-size: 4.8mm;
+        }
+
+        footer #our-company ul li {
+
+            text-align: left;
+            font-size: 4mm;
+        }
+
+        footer #our-company .erweima {
+            margin-left: 100px;
+        }
+
+        footer #our-company .erweima li {
+            display: inline-block;
+        }
+
+        .line {
+            margin: 0 auto;
+            width: 80%;
+            height: 1px;
+            background-color: #9d9d9d;
+        }
+        #copy-right{
+            font-size: 3.6mm;
+            text-align: center;
+        }
+        .footer-links li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <ul class="header-nav">
+        <li>
+            <a><img src="images/公司logo.png"></a>
+        </li>
+        <li>
+            首页
+        </li>
+        <li>
+            关于我们
+        </li>
+        <li>
+            团队介绍
+        </li>
+        <li>
+            网站建设
+        </li>
+        <li>
+            档案中心
+        </li>
+        <li>
+            新闻中心
+        </li>
+        <li>
+            服务流程
+        </li>
+        <li>
+            联系我们
+        </li>
+    </ul>
+</header>
+<div class="content">
+    <div id="company-show">
+
+
+    </div>
+    <div id="service" class="text-center" style="padding-top: 80px">
+        <span style="font-family: '方正兰亭刊黑';font-size: 20px;font-weight: bold;">一站式手机APP开发服务</span>
+        <br>
+        <span>-SERVICE-</span>
+
+
+        <ul class="service-introduction">
+            <li>
+                <img src="images/service-imgs/点击前.png"><br>
+                <br>
+                <span class="service-title">安卓APP开发</span>
+                <br><br>
+                <span class="service-detail">致力于安卓手机APP开发更兼容，更便捷</span>
+            </li>
+            <li><img src="images/service-imgs/点击前0.png"><br><br>
+                <span class="service-title">苹果APP开发</span><br><br>
+                <span class="service-detail">致力于安卓手机APP开发更兼容，更便捷</span>
+            </li>
+            <li>
+                <img src="images/service-imgs/点击前1.png"><br>
+                <br>
+                <span class="service-title">HTML5开发</span><br><br>
+                <span class="service-detail">致力于安卓手机APP开发更兼容，更便捷</span>
+            </li>
+            <li>
+                <img src="images/service-imgs/点击前2.png"><br>
+                <br>
+                <span class="service-title">微信公众号开发</span><br><br>
+                <span class="service-detail">致力于安卓手机APP开发更兼容，更便捷</span>
+            </li>
+
+
+        </ul>
+
+    </div>
+    <div id="cases" class="text-center">
+        <div class="text-center" style="padding-top: 50px;"><span
+                style="font-family: 方正兰亭刊黑;font-size: 6mm;font-weight: bold">案例展示</span><br>
+
+            <span style="font-family: 方正兰亭刊黑;font-size: 3mm;font-weight: bold">-CASE-</span>
+        </div>
+
+        <table id="cases-show">
+            <tr>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+                <td>
+                    <div class="img-show"><img src="images/cases/建站板块1.png"></div>
+                </td>
+            </tr>
+
+        </table>
+        <br>
+
+        <span style="padding: 10px 20px;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;background-color: white;position: absolute;bottom: 50px;color: #f5883b">
+            了解更多
+        </span>
+
+    </div>
+    <div id="web-maker">
+
+        <ul style="margin: 0;height: 670px">
+            <li class="left">
+                <div class="img-container">
+                    <div class="img1"><img src="images/web-maker/建站板块3.png"></div>
+                    <div class="img2"><img src="images/web-maker/建站板块2.png"></div>
+                    <div class="img3"><img src="images/web-maker/建站板块1.png"></div>
+                </div>
+            </li>
+            <li class="right">
+                <div class="web-maker-text-content">
+                    <span class="web-maker-title"
+                          style="font-family: 方正兰亭刊黑;font-weight: bold;font-size: 8mm">网站制作</span><br>
+                    <span style="font-size: 6mm;font-family: 方正兰亭刊黑;font-weight: bold">你想要的功能这儿都有</span><br>
+                    <br>
+                    <span style="width:100px;word-wrap: break-word;word-break: break-all;font-family: 方正兰亭刊黑;font-size: 4mm">请在网站“模板”栏目选择模板，模板不分行业的只要选择自己喜欢的模板就可以；填写网站管理信息，创建网站，登录网站管理中心，体验简易的网站管理。</span><br>
+
+
+                    <br>
+                    <img src="images/web-maker/快速建站.png">
+
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+    <div id="become">
+        <div class="bg1">
+            <div class="bg2 text-center" style="padding-top: 20px">
+                <span style="padding-top: 200px;font-family: 方正兰亭刊黑;font-size: 5.6mm;font-weight: bold">如何让你的访客变成顾客？</span>
+                <br>
+                <span style="padding-top: 200px;font-family: 方正兰亭刊黑;font-size: 4.4mm;">EXTENSION</span>
+
+
+                <div class="youhua">
+                    <ul>
+                        <li><img src="images/become/优化01.png"><br>
+                            <span>代码优化</span>
+                            <br> <br>
+                            <span>同一页面关键词出现多次,<br>有关键词堆砌的作弊嫌疑</span>
+                        </li>
+                        <li><img src="images/become/优化02.png"><br>
+                            <span>页面优化</span>
+                            <br> <br>
+                            <span>同一页面关键词出现多次,<br>有关键词堆砌的作弊嫌疑</span>
+                        </li>
+                        <li><img src="images/become/优化03.png"><br>
+                            <span>外链优化</span>
+                            <br> <br>
+                            <span>同一页面关键词出现多次,<br>有关键词堆砌的作弊嫌疑</span>
+                        </li>
+                        <li><img src="images/become/优化04.png"><br>
+                            <span>整网优化</span>
+                            <br> <br>
+                            <span>同一页面关键词出现多次,<br>有关键词堆砌的作弊嫌疑</span>
+                        </li>
+                    </ul>
+
+                    <br>
+                    <span style="font-family: 方正兰亭刊黑;font-size: 6mm;color: white">
+                        不是任何网站都能排在前三！<br>
+                        能上百度第一页的网站，要达到什么要求？
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        <img src="images/web-maker/more.png">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="operate-service" class="text-center">
+        <span style="font-family: 方正兰亭刊黑;font-size: 6.4mm">运营服务</span><br>
+        <span>-OPERATE-</span>
+        <BR>
+        <div class="operate-content" style="margin-top: 70px">
+            <div class="col-lg-4 col-md-4 col-sm-4" style="top: 130px;height: 100%;padding: 0">
+                <div style="right: 10px;position: absolute"><img src="images/operate/椭圆-8.png"><br><span
+                        style="position: absolute;left: 0;font-size: 6.4mm;font-family: 方正兰亭刊黑;color:#D4D5D7">性能</span>
+                </div>
+                <div style="right: 100px;position: absolute"><img src="images/operate/椭圆-6.png"
+                                                                  style="margin-top: 120px"><br><span
+                        style="position: absolute;left: 0;font-size: 6.4mm;font-family: 方正兰亭刊黑;color:#D4D5D7">安全</span>
+                </div>
+                <br>
+                <div style="background: url('images/operate/椭圆.png') no-repeat;height: 130px;text-align: left;line-height: 130px;margin-left: 10px;position:absolute;margin-top: 250px;width: 434px">
+                    惺惺惜惺惺惺惺惜惺惺惺惺惜惺惺惺惺惜惺惺嘻嘻嘻
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4"><img src="images/operate/主体.png"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4" style="top: 130px;height: 100%;padding: 0">
+
+                <div style="left: 10px;position: absolute"><img src="images/operate/椭圆-9.png"><br><span
+                        style="position: absolute;right: 0;font-size: 6.4mm;font-family: 方正兰亭刊黑;color:#D4D5D7">性能</span>
+                </div>
+                <div style="left: 100px;position: absolute"><img src="images/operate/圆角矩形-17.png"
+                                                                 style="margin-top: 120px"><br><span
+                        style="position: absolute;right: 0;font-size: 6.4mm;font-family: 方正兰亭刊黑;color:#D4D5D7">安全</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="links">
+        <span style="font-size: 6.4mm;color: white">合作伙伴</span>
+
+    </div>
+
+
+</div>
+
+<footer class="container-fluid">
+
+    <div id="our-company" class="container-fluid">
+        <ul class="list-group">
+            <li>APP开发</li>
+            <li>Android开发</li>
+            <li>Ios开发</li>
+            <li>HTML5开发</li>
+            <li>微信开发</li>
+        </ul>
+        <ul>
+            <li>核心服务</li>
+            <li>APP开发</li>
+            <li>技术孵化</li>
+            <li>产品设计</li>
+            <li>增值服务</li>
+        </ul>
+        <ul>
+            <li>关于我们</li>
+            <li>逸云优势</li>
+            <li>企业文化</li>
+            <li>人才计划</li>
+            <li>联系我们</li>
+        </ul>
+
+        <ul class="erweima">
+            <li>APP开发</li>
+            <li>Android开发</li>
+        </ul>
+        <div class="line"></div>
+    </div>
+    <div id="copy-right">
+
+        <ul class="footer-links">
+            <li>关于逸云</li>
+            <li>服务协议</li>
+            <li>隐私政策</li>
+            <li>逸云招聘</li>
+            <li>逸云学堂</li>
+            <li>客服中心</li>
+            <li>网站导航</li>
+            <li>亲子鉴定</li>
+            <li>友情赞助</li>
+        </ul>
+       <span>Copyright 2014-2015 All right Reserved.逸云科技 版权所有</span><br>
+        <span>工信部备案号 粤ICP备14056574号-1 http://www.easecloud.cn</span>
+    </div>
+</footer>
+
+</body>
+</html>
